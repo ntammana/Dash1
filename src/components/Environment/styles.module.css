@@ -1,0 +1,28 @@
+@import url("../../styles/base.css");
+
+.environment {
+  /*border: 1px solid red;*/
+  height: 100%;
+  top: var(--topbar-height);
+  left: 0;
+  overflow: hidden;
+
+  position: relative;
+  z-index: 0;
+
+  flex-direction: column;
+  order: 2;
+  flex: 1;
+  margin: 0 auto;
+  float: none;
+      flex: 1;
+    background: #fff;
+    border-bottom: 1px solid #eee;
+    padding: 0 10px;
+    float: left;
+    display:inline;
+    width: 50%;
+  .heading {
+      font-size: 1.8em;
+  }
+}

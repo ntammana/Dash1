@@ -1,0 +1,25 @@
+.container {
+	height: 100%;
+	overflow: auto;
+	padding: 30px;
+	margin: 3px 1px;
+	border: 1px dotted #808080;
+	float: left;
+	display:inline;
+	width: 33%;
+	font: black;
+	/*display: inline-block;*/
+	/*vertical-align: top;*/
+
+}
+.servContainer {
+	a {
+	    text-decoration: none;
+	}
+	a:link, a:visited {
+	    color: black;
+	}
+	a:hover {
+	    color: #808080;
+	}
+}
