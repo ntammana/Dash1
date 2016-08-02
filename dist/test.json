@@ -1,4 +1,1 @@
- {
-	"serverURI": "testing from json1", 
-	"buildID": "testing from json2"
-}
+{"buildID":"OMNI NA - Build Release number : OMNI|20160720-025139","serverURI":"qa3.lululemon.com","bccURL":"http://qa3.lululemon.com:8180/atg/bcc","cscURL":"http://qa3.lululemon.com:8280/agent"}

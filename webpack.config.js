@@ -23,14 +23,14 @@ const dest    = join(root, 'dist');
 console.log(dest);
 
 var config = getConfig({
-  isProd,
+  isDev,
   in: join(src, 'app.js'),
   out: dest,
   html: function (context) {
     return {
       'index.html': context.defaultTemplate({
         title: 'Stage and QA Server Status',
-        publicPath: isProd ? 'http://localhost:3000/' : '',
+        publicPath: isDev ? 'http://localhost:3000/' : '',
         meta: {
           'name': 'Stage and QA Server Status',
           'description': ''
@@ -40,11 +40,6 @@ var config = getConfig({
   }
 });
 
-new webpack.optimize.UglifyJsPlugin({
-  compress:{
-    warnings: true
-  }
-})
 
 if (isTest) {
   config.externals = {
